@@ -37,7 +37,7 @@ namespace TechnicalAssessment.Bussiness
 
                 var model = new OrderHead()
                 {
-                    CustomerName = viewModel.CustomerName,
+                    CustomerId = viewModel.CustomerId,
                     CreatedDate = DateTime.Now
                 };
 
@@ -63,7 +63,7 @@ namespace TechnicalAssessment.Bussiness
                          select new OrderHeadViewModel()
                          {
                              OrderNum = o.OrderNum,
-                             CustomerName = o.CustomerName,
+                             CustomerId = o.CustomerId,
                              CreatedDate = o.CreatedDate.ToString("dd/MM/yyyy", System.Globalization.CultureInfo.InvariantCulture),
                          });
             return await query.ToListAsync();

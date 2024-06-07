@@ -17,5 +17,6 @@ namespace TechnicalAssessment.Domain.DataContext
 
         public DbSet<OrderHead> OrderHeads { get; set; }
         public DbSet<OrderDtl> OrderDetails { get; set; }
+        public DbSet<Customer> Customers{get; set; }
     }
 }

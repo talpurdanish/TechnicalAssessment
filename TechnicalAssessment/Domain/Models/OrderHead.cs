@@ -11,13 +11,13 @@ namespace TechnicalAssessment.Domain.Models
     {
         [Key]
         public int OrderNum { get; set; }
-        [Required]
-        [MaxLength(250)]
-        public string CustomerName { get; set; } = string.Empty;
+        
+        public int CustomerId { get; set; }
         [Required]
         
         public DateTime CreatedDate { get; set; }
 
+        public virtual Customer Customer{get; set; }
         public IEnumerable<OrderDtl> OrderDetails { get; set; }
 
     }

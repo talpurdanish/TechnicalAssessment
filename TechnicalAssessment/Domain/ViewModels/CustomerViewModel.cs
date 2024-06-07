@@ -3,19 +3,21 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
+using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace TechnicalAssessment.Domain.ViewModels
 {
-    internal class OrderHeadViewModel
+    internal class CustomerViewModel
     {
-        public int OrderNum { get; set; }
-        [Required(ErrorMessage = "Name is Required")]
-      
+
+        [Required(ErrorMessage = "Customer Name is Required")]
+        [DisplayName("Customer Name")]
+        public string CustomerName { get; set; }
         public int CustomerId { get; set; }
-        [Required(ErrorMessage = "Date is Required")]
-        [DisplayName("Date")]
-        public string CreatedDate { get; set; }= string.Empty;
+        public bool IsActive { get; set; }
+
+        
     }
 }

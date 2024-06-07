@@ -57,11 +57,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AppException.cs" />
+    <Compile Include="Bussiness\CustomerHandler.cs" />
     <Compile Include="Bussiness\OrderDetailHandler.cs" />
     <Compile Include="Bussiness\OrderHeadHandler.cs" />
     <Compile Include="Domain\DataContext\DatabaseContext.cs" />
+    <Compile Include="Domain\Models\Customer.cs" />
     <Compile Include="Domain\Models\OrderDtl.cs" />
     <Compile Include="Domain\Models\OrderHead.cs" />
+    <Compile Include="Domain\ViewModels\CustomerViewModel.cs" />
     <Compile Include="Domain\ViewModels\OrderDetailViewModel.cs" />
     <Compile Include="Domain\ViewModels\OrderHeadViewModel.cs" />
     <Compile Include="Form1.cs">
